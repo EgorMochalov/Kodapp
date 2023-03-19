@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% include "../parts/meta.twig" %}
+<body>
+
+{#{% include "../../blocks/browser-update/browser-update.twig" %}#}
+
+{% block header %}
+  {% include "../../blocks/header/header.twig" %}
+{% endblock %}
+
+<main class="page-main">
+  {#{% include '../../blocks/preloader/preloader.twig' %}#}
+  {% block body %}{% endblock %}
+</main>
+
+{% block footer %}
+ {% include "../../blocks/footer/footer.twig" %}
+{% endblock %}
+
+{% include "../../assets/icons/icon-sprite.svg" %}
+
+{% block popups %}{% endblock %}
+
+{% block vueTemplates %}{% endblock %}
+
+{% block scripts %}
+  <script src="/scripts/vendor/swiper.min.js"></script>
+  <script src="/scripts/index.js" defer></script>
+  <script src="/scripts/frontend-debug-menu.js" defer></script>
+{% endblock %}
+</body>
+</html>
