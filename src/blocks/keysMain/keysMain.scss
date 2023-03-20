@@ -1,0 +1,264 @@
+/*Keys*/
+.section-keys__swiper-container {
+  position: relative;
+  overflow: visible;
+}
+
+.section-keys__swiper img {
+  width: 300px;
+  height: 158px;
+  border-radius: 8px;
+
+  @include w-from($screen-md) {
+    width: 600px;
+    height: 316px;
+  }
+
+  @include w-from($screen-lg) {
+    width: auto;
+    height: auto;
+  }
+}
+
+.section-keys__controls {
+  display: flex;
+  position: absolute;
+  bottom: -60px;
+  background-color: white;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 10;
+  justify-self: flex-start;
+  border: 1px solid #EBEBEA;
+  border-radius: 8px;
+
+  @include w-from($screen-lg) {
+    left: 28%;
+    bottom: -25px;
+    transform: none;
+  }
+}
+
+.section-keys__swiper-prev,
+.section-keys__swiper-next {
+  line-height: 12px;
+  cursor: pointer;
+  padding: 14px;
+
+  @include w-from($screen-md) {
+    padding: 18px;
+  }
+
+  @include w-from($screen-lg) {
+    padding: 24px;
+    line-height: 18px;
+  }
+}
+
+.section-keys__swiper-prev svg,
+.section-keys__swiper-next svg {
+  width: 12px;
+  height: 12px;
+
+  @include w-from($screen-lg) {
+    width: auto;
+    height: auto;
+  }
+}
+
+.section-keys__swiper-next {
+  border-left: 1px solid #EBEBEA;
+}
+
+.section-keys__swiper-prev use {
+  stroke: #111111;
+}
+
+.section-keys__swiper-next use {
+  stroke: #C41E3A;
+}
+
+.section-keys__swiper .swiper-slide {
+  width: auto
+}
+
+
+.section-keys__partners {
+  max-width: 1669px;
+  margin-top: 120px;
+
+  @include w-from($screen-lg) {
+    margin-top: 80px;
+  }
+}
+
+.section-keys__partners .swiper-slide {
+  width: auto;
+}
+
+.section-keys__partners svg {
+  width: 152px;
+  height: 40px;
+
+  @include w-from($screen-md) {
+    width: auto;
+    height: auto;
+  }
+}
+
+.section-keys__info {
+  padding-bottom: 0;
+}
+
+.info-head {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @include w-from($screen-md) {
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.info-btn {
+  margin-bottom: 0;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  @include w-from($screen-md) {
+    justify-content: flex-start;
+  }
+}
+
+.info-arrow {
+  margin-left: 12px;
+  display: none;
+
+  @include w-from($screen-md) {
+    display: block;
+  }
+}
+
+.info-arrow use {
+  stroke: #111111;
+}
+
+.info-swiper {
+  margin-top: 24px;
+  @include w-from($screen-md) {
+    margin-top: 40px;
+  }
+}
+
+.info-swiper .swiper-slide {
+  height: 100%;
+  width: 290px;
+
+  @include w-from($screen-lg) {
+    width: 362px;
+  }
+}
+
+.info-pagination {
+  position: static;
+  margin-top: 24px;
+  @include w-from($screen-md) {
+    margin-top: 40px;
+  }
+}
+
+.info-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -20px;
+
+  @include w-from($screen-md) {
+    bottom: -50px;
+  }
+}
+
+.info-pagination .swiper-pagination-bullet {
+  width: 32px;
+  height: 4px;
+  border-radius: 8px;
+  background-color: #111111;
+  opacity: 0.5;
+}
+
+.info-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.info-swiper-container {
+  position: relative;
+}
+
+.info-text {
+  margin-bottom: 40px;
+  @include w-from($screen-lg) {
+    margin-bottom: 0;
+  }
+}
+
+/*Card*/
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.card-text {
+  flex: 1;
+  padding: 24px;
+  border-right: 1px solid #EBEBEA;
+  border-bottom: 1px solid #EBEBEA;
+  border-left: 1px solid #EBEBEA;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.card-title {
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 24px;
+
+  @include w-from($screen-lg) {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 12px;
+  }
+}
+
+.card-date {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.info-head__img {
+  position: relative;
+}
+
+.card-atribut {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  display: flex;
+  gap: 4px;
+}
+
+.card-atribut-item {
+  padding: 4px 12px;
+  border-radius: 8px;
+  background-color: white;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #C41E3A;
+}

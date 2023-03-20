@@ -1,0 +1,225 @@
+/*Header*/
+.header {
+  position: relative;
+  overflow: hidden;
+  background-color: #FAFAFA;
+  padding-top: 24px;
+  padding-bottom: 0;
+
+  @include w-from($screen-md) {
+    padding-top: 30px;
+    padding-bottom: 72px;
+  }
+
+  @include w-from($screen-lg) {
+    padding-top: 60px;
+    padding-bottom: 164px;
+  }
+
+  &__nav {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    @include w-from($screen-md) {
+      margin-bottom: 72px;
+    }
+
+    @include w-from($screen-lg) {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__burger {
+    width: 18px;
+    height: 24px;
+
+    @include w-from($screen-md) {
+      width: 24px;
+      height: 32;
+    }
+  }
+
+  &__logo {
+    margin-right: 25px;
+    width: 144px;
+    height: 40px;
+
+    @include w-from($screen-md-2) {
+      width: 212px;
+      height: 60px;
+    }
+
+    @include w-from($screen-md-2) {
+      width: 260px;
+      height: 70px;
+    }
+
+    @include w-from($screen-lg) {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  &__list,
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+    display: none;
+
+    @include w-from($screen-lg) {
+      display: flex;
+    }
+  }
+
+  &__list li {
+    margin-right: 48px;
+  }
+
+  &__item {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    text-transform: uppercase;
+  }
+
+  &__item a {
+    color: #111111;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    max-width: 100%;
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 12px;
+    text-align: center;
+
+    @include w-from($screen-md) {
+      max-width: 54%;
+      text-align: start;
+      font-size: 42px;
+      line-height: 48px;
+      margin-bottom: 16px;
+    }
+
+    @include w-from($screen-lg) {
+      font-size: 52px;
+      line-height: 64px;
+    }
+  }
+
+  &__descr {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+
+    @include w-from($screen-md) {
+      text-align: start;
+      max-width: 80%;
+      margin-bottom: 32px;
+      font-size: 20px;
+      line-height: 32px;
+    }
+
+    @include w-from($screen-lg) {
+      max-width: 55%;
+    }
+  }
+
+  &__controllers {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+
+    @include w-from($screen-md) {
+      flex-direction: row;
+    }
+  }
+
+  &__controllers svg {
+
+    width: 14px;
+    height: 14px;
+
+    @include w-from($screen-md) {
+      width: 12px;
+      height: 12px;
+    }
+
+    @include w-from($screen-lg) {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  &__controllers button:not(:last-child) {
+    margin-bottom: 8px;
+
+    @include w-from($screen-md) {
+      margin-right: 18px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__controllers button {
+    display: flex;
+    justify-content: center;
+
+    @include w-from($screen-md) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__controllers button svg {
+    display: none;
+
+    @include w-from($screen-md) {
+      display: block;
+    }
+  }
+
+  &__hadn {
+    position: static;
+    display: block;
+    z-index: 1;
+    right: -2px;
+    top: 0;
+    margin: 0 auto;
+    margin-top: 32px;
+
+    @include w-from($screen-md) {
+      position: absolute;
+      margin-top: 0;
+    }
+
+    @include w-from($screen-md-2) {
+      right: -450px;
+      bottom: -164px;
+    }
+
+    @include w-from($screen-lg) {
+      right: -210px;
+      bottom: -164px;
+    }
+  }
+}
+
+.header .container {
+  position: relative;
+}

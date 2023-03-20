@@ -1,0 +1,21 @@
+{% extends 'template/main.twig' %}
+
+{% block body %}
+
+  {% set head = {
+    "title": "Kodapp",
+    "text": [
+      "Элемент списка 1",
+      "Элемент списка 2",
+      "Элемент списка 3"
+    ]
+  } %}
+  {% include '../blocks/skillsMain/skillsMain.twig' %}
+  {% include '../blocks/helpMain/helpMain.twig' %}
+  {% include '../blocks/experienceMain/experienceMain.twig' %}
+  {% include '../blocks/principlesMain/principlesMain.twig' %}
+  {% include '../blocks/keysMain/keysMain.twig' %}
+  {% include '../blocks/redMain/redMain.twig' %}
+  
+
+{% endblock %}

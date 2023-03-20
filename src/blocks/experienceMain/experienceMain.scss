@@ -1,0 +1,113 @@
+.experience__desr {
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.experience__list {
+    padding-bottom: 16px;
+    display: flex;
+    border-bottom: 2px solid #EBEBEA;
+}
+
+.experience__list li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.experience__item {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience__item-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.experience__item-active .experience__item-text {
+    font-weight: 600;
+    color: #C41E3A;
+}
+
+.experience__item-active::before {
+    position: absolute;
+    content: "";
+    background: #C41E3A;
+    left: 0;
+    right: 0;
+    height: 4px;
+    bottom: -16px;
+}
+
+.experience__item-icon {
+    margin-bottom: 17px;
+}
+
+.experience__individual-title {
+    @include font-size(24px, normal, 32px, 600);
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+.experience__individual-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 12px;
+}
+
+.experience__individual-btn {
+    margin-top: 24px;
+    padding: 15px 24px 17px;
+    font-size: 16px;
+}
+
+.experience__individual-content {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @include w-from($screen-lg) {
+        padding-top: 40px;
+    }
+    
+    @include w-from($screen-lg) {
+        padding-top: 62px;
+    }
+}
+
+.experience__individual-text {
+    max-width: 100%;
+    margin-left: 0;
+
+    @include w-from($screen-md) {
+        margin-left: 6%;
+    }
+
+    @include w-from($screen-lg) {
+        max-width: 60%;
+        margin-right: 20px;
+    }
+}
+
+.experience__swiper .swiper-slide {
+    width: 166px;
+}
+
+.section-experience__title {
+    margin-bottom: 16px;
+
+    @include w-from($screen-md) {
+        margin-bottom: 24px;
+    }
+}

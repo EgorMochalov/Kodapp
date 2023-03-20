@@ -1,0 +1,40 @@
+.t-h3 {
+  @include t-h3();
+}
+
+.t-h4 {
+  @include t-h4();
+}
+
+.h2-title {
+  @include t-h2()
+}
+
+.h2-center {
+  @include t-h2-center()
+}
+
+.descr-center {
+  @include p-descr()
+}
+
+.help__span {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #C41E3A;
+  margin-bottom: 8px;
+
+  @include w-from($screen-md) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @include w-from($screen-md) {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

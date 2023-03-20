@@ -1,0 +1,87 @@
+.section-skills__list {
+    display: flex;
+    flex-direction: column;
+
+    @include w-from($screen-lg) {
+        flex-direction: row;
+    }
+}
+
+.section-skills__list li:not(:last-child) {
+    margin-bottom: 20px;
+
+    @include w-from($screen-md) {
+        margin-bottom: 30px;
+    }
+
+    @include w-from($screen-lg) {
+        margin-right: 30px;
+    }
+}
+
+.section-skills__item {
+    display: flex;
+    flex-direction: row;
+
+    @include w-from($screen-lg) {
+        flex-direction: column;
+    }
+}
+
+.section-skills__title {
+    margin-top: 22px;
+    margin-bottom: 4px;
+    margin-top: 0;
+    @include font-size(16px, normal, 28px, 600);
+
+    @include w-from($screen-md) {
+        margin-bottom: 12px;
+        @include font-size(20px, normal, 32px, 600);
+    }
+
+    @include w-from($screen-md) {
+        @include font-size(22px, normal, 32px, 600);
+    }
+
+    @include w-from($screen-lg) {
+        @include font-size(24px, normal, 32px, 600);
+        margin-top: 20px;
+    }
+}
+
+.section-skills__text {
+    flex: 1;
+    margin-left: 12px;
+
+    @include w-from($screen-md) {
+        margin-left: 24px;
+    }
+
+    @include w-from($screen-lg) {
+        margin-left: 0;
+    }
+}
+
+.section-skills__icon {
+    height: 32px;
+    width: 32px;
+
+    @include w-from($screen-md) {
+        height: 48px;
+        width: 48px;
+    }
+
+    @include w-from($screen-md-2) {
+        width: 68px;
+        height: 68px;
+    }
+}
+
+.section-skills__desr {
+    margin: 0;
+    @include font-size(14px, normal, 24px, 400);
+
+    @include w-from($screen-md) {
+        @include font-size(16px, normal, 28px, 400);
+    }
+}
