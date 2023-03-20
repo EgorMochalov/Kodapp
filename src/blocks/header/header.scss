@@ -4,16 +4,13 @@
   overflow: hidden;
   background-color: #FAFAFA;
   padding-top: 24px;
-  padding-bottom: 0;
 
   @include w-from($screen-md) {
     padding-top: 30px;
-    padding-bottom: 72px;
   }
 
   @include w-from($screen-lg) {
     padding-top: 60px;
-    padding-bottom: 164px;
   }
 
   &__nav {
@@ -22,14 +19,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
 
     @include w-from($screen-md) {
-      margin-bottom: 72px;
+      // margin-bottom: 72px;
     }
 
     @include w-from($screen-lg) {
-      margin-bottom: 100px;
+      // margin-bottom: 100px;
     }
   }
 
@@ -121,79 +118,6 @@
     }
   }
 
-  &__descr {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    max-width: 100%;
-    margin-bottom: 20px;
-    text-align: center;
-
-    @include w-from($screen-md) {
-      text-align: start;
-      max-width: 80%;
-      margin-bottom: 32px;
-      font-size: 20px;
-      line-height: 32px;
-    }
-
-    @include w-from($screen-lg) {
-      max-width: 55%;
-    }
-  }
-
-  &__controllers {
-    display: flex;
-    flex-direction: column;
-    order: 1;
-
-    @include w-from($screen-md) {
-      flex-direction: row;
-    }
-  }
-
-  &__controllers svg {
-
-    width: 14px;
-    height: 14px;
-
-    @include w-from($screen-md) {
-      width: 12px;
-      height: 12px;
-    }
-
-    @include w-from($screen-lg) {
-      width: 14px;
-      height: 14px;
-    }
-  }
-
-  &__controllers button:not(:last-child) {
-    margin-bottom: 8px;
-
-    @include w-from($screen-md) {
-      margin-right: 18px;
-      margin-bottom: 0;
-    }
-  }
-
-  &__controllers button {
-    display: flex;
-    justify-content: center;
-
-    @include w-from($screen-md) {
-      justify-content: flex-start;
-    }
-  }
-
-  &__controllers button svg {
-    display: none;
-
-    @include w-from($screen-md) {
-      display: block;
-    }
-  }
-
   &__hadn {
     position: static;
     display: block;
@@ -218,8 +142,4 @@
       bottom: -164px;
     }
   }
-}
-
-.header .container {
-  position: relative;
 }

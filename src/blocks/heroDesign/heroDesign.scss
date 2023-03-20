@@ -1,0 +1,20 @@
+.section-hero.section-hero {
+    padding-top: 40px;
+    padding-bottom: 0;
+    overflow: hidden;
+
+    @include w-from($screen-md) {
+        padding-top: 72px;
+        padding-bottom: 72px;
+    }
+
+    @include w-from($screen-lg) {
+        padding-top: 100px;
+        padding-bottom: 72px;
+
+    }
+}
+
+.section-hero__title.section-hero__title-design {
+    max-width: 100%;
+}

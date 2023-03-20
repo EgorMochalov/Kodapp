@@ -1,0 +1,113 @@
+.section-artefact__container {
+    display: flex;
+    flex-direction: column;
+
+    @include w-from($screen-md-2) {
+        flex-direction: row;
+    }
+}
+
+.section-artefact__left,
+.section-artefact__right {
+    max-width: 100%;
+
+    @include w-from($screen-md-2) {
+        max-width: 50%;
+    }
+}
+
+.section-artefact__right {
+    padding-left: 0px;
+    margin-top: 44px;
+
+    @include w-from($screen-md-2) {
+        margin-top: 30px;
+        padding-left: 30px;
+    }
+
+    @include w-from($screen-md-2) {
+        margin-top: 0;
+        padding-left: 30px;
+    }
+}
+
+.section-artefact__descr {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+
+    @include w-from($screen-md) {
+        margin-top: 12px;
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 24px;
+    }
+
+    @include w-from($screen-md) {
+        margin-bottom: 52px;
+    }
+}
+
+
+.section-artefact__item .section-artefact__descr {
+    display: none;
+}
+
+.section-artefact__item-active .section-artefact__descr {
+    display: block;
+}
+
+.section-artefact__item span {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    line-height: 24px;
+    font-size: 16px;
+
+    @include w-from($screen-md) {
+        line-height: 24px;
+        font-size: 18px;
+    }
+
+    @include w-from($screen-lg) {
+        line-height: 24px;
+        font-size: 18px;
+    }
+
+}
+
+.section-artefact__item-active span {
+    color: #C41E3A;
+}
+
+.section-artefact__item-active use {
+    stroke: #C41E3A;
+}
+
+.section-artefact__item-active svg {
+    transform: rotate(180deg);
+}
+
+.section-artefact__item svg {
+    stroke: #111111;
+    margin-right: 12px;
+    width: 8px;
+    height: 4px;
+
+    @include w-from($screen-md) {
+        width: 12px;
+        height: 6px;
+        margin-right: 16px;
+    }
+}
+
+.section-artefact__item:not(:last-child) {
+    margin-bottom: 20px;
+
+    @include w-from($screen-md) {
+        margin-bottom: 24px;
+    }
+}

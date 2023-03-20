@@ -47,4 +47,20 @@ export const slidersMain = () => {
       }
     }
   });
+
+  const swiper5 = new Swiper('.js-section-designing__swiper', {
+    // Optional parameters
+    slidesPerView: 1,
+    spaceBetween: 20,
+    breakpoints:{
+      667:{
+        slidesPerView: 'auto',
+        enabled: false,
+      }
+    },
+    navigation: {
+      nextEl: '.js-designing__swiper-next',
+      prevEl: '.js-designing__swiper-prev',
+    }
+  });
 }

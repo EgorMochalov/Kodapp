@@ -23,6 +23,7 @@
     }
 
     @include w-from($screen-lg) {
+        margin-bottom: 0;
         margin-right: 32px;
     }
 }
@@ -30,10 +31,6 @@
 .section-principles__item {
     display: flex;
     flex-direction: column;
-}
-
-.section-principles__icon {
-    margin-bottom: 16px;
 }
 
 .section-principles__span {
@@ -91,6 +88,7 @@
 }
 
 .section-principles__icon {
+    margin-bottom: 16px;
     height: 32px;
     width: 32px;
 

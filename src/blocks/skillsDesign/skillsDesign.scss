@@ -1,0 +1,23 @@
+.design__h2 {
+    margin-bottom: 16px;
+
+    @include w-from($screen-md){
+        margin-bottom: 24px;
+    }
+}
+
+.section-skillsDesign .section-skills__list{
+    margin-top: 36px;
+
+    @include w-from($screen-md){
+        margin-top: 30px;
+    }
+
+    @include w-from($screen-lg){
+        margin-top: 65px;
+    }
+}
+
+.section-skills__desr.section-skills__desrDesign {
+    margin-top: 12px;
+}

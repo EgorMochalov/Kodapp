@@ -58,6 +58,10 @@
     line-height: 32px;
 }
 
+.section-footer__list-item a {
+    color: white;
+}
+
 .section-footer__title {
     font-weight: 600;
     font-size: 16px;
@@ -70,5 +74,69 @@
 
     @include w-from($screen-lg) {
         margin-bottom: 32px;
+    }
+}
+
+.footer__phone {
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 4px;
+
+    @include w-from($screen-md) {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+.footer__email {
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    @include w-from($screen-md) {
+        line-height: 28px;
+    }
+}
+
+.footer__docs span {
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    @include w-from($screen-md) {
+        line-height: 28px;
+    }
+
+    @include w-from($screen-lg) {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 24px;
+
+    @include w-from($screen-md) {
+        flex-direction: row;
+        margin-top: 40px;
+    }
+}
+
+.footer__links,.footer__docs {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__links {
+    margin-bottom: 24px;
+    @include w-from($screen-md) {
+        margin-bottom: 0;
     }
 }
