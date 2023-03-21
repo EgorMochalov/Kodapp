@@ -14,12 +14,10 @@
   @include t-h2-center()
 }
 
-/* TODO У всех типографских стилей рекомендую делать единообразный префикс по аналогии с .t-h3, .t-h4, т.е. этот должен называться .t-descr-center */
 .descr-center {
   @include p-descr()
 }
 
-/* TODO Протечка абстракции, этому стилю тут не место */
 .help__span {
   display: block;
   font-weight: 500;
