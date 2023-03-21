@@ -1,0 +1,50 @@
+.expertise__list {
+    margin-top: 20px;
+
+    @include w-from($screen-md) {
+        margin-top: 24px;
+    }
+}
+
+.expertis__swiper .swiper-slide {
+    width: auto;
+}
+
+.section-why__list.section-expertise__list {
+    grid-template-columns: repeat(1, 1fr);
+
+    @include w-from($screen-md) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include w-from($screen-lg) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.section-expertise__list .section-principles__item {
+
+    @include w-from($screen-md) {
+        flex-direction: column;
+    }
+}
+
+.section-expertise__list .section-principles__item-text {
+
+    @include w-from($screen-md) {
+        margin-left: 0;
+    }
+}
+
+
+.expertise__item {
+    align-items: flex-start;
+}
+
+.expertise__item-active:before {
+    bottom: -12px;
+}
+
+.expertise__list {
+    padding-bottom: 12px;
+}

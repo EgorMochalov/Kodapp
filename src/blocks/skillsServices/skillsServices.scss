@@ -1,0 +1,28 @@
+.services-help__link-text {
+    text-transform: none;
+    font-weight: 400;
+    margin-left: 0;
+}
+
+.services-help__link {
+    margin-top: 4px;
+
+    @include w-from($screen-md) {
+        margin-top: 12px;
+    }
+
+    @include w-from($screen-lg) {
+        margin-top: 16px;
+    }
+}
+
+.services-help__link:not(:last-child) {
+    margin-right: 17px;
+    @include w-from($screen-md) {
+        margin-right: 26px;
+    }
+}
+
+.services-help__link-container {
+    display: flex;
+}

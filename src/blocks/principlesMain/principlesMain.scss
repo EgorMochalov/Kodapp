@@ -42,7 +42,7 @@
         @include font-size(16px, normal, 28px, 600);
     }
 
-    @include w-from($screen-md) {
+    @include w-from($screen-md-2) {
         @include font-size(18px, normal, 30px, 600);
     }
 

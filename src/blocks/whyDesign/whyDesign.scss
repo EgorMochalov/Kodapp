@@ -15,13 +15,15 @@
     }
 }
 
-.section-why__list li:not(:last-child) {
+.section-why__list li {
     margin-bottom: 44px;
 
     @include w-from($screen-md) {
         margin-bottom: 24px;
     }
+}
 
+.section-why__list li:not(:last-child) {
     @include w-from($screen-lg) {
         margin-right: 32px;
     }
@@ -31,4 +33,15 @@
     margin-bottom: 20px;
     height: 32px;
     width: 32px;
+}
+
+.section-why .section-principles__span {
+    margin-bottom: 12px;
+    font-weight: 600;
+    @include font-size(16px, normal, 28px, 600);
+
+
+    @include w-from($screen-md) {
+        @include font-size(18px, normal, 24px, 600);
+    }
 }
