@@ -1,6 +1,6 @@
 .section-hero.section-hero {
     padding-top: 40px;
-    padding-bottom: 0;
+    padding-bottom: 40px;
     overflow: hidden;
 
     @include w-from($screen-md) {
@@ -17,4 +17,9 @@
 
 .section-hero__title.section-hero__title-design {
     max-width: 100%;
+    text-align: start;
+}
+
+.section-hero__title.section-hero__title-design ~ .section-hero__descr {
+    text-align: start;
 }
