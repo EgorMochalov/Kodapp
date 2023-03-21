@@ -1,0 +1,13 @@
+.section-hero-blog-card .section-hero__descr {
+    max-width: 100%;
+}
+
+.section-blogCard__content .help__link {
+    margin-top: 0;
+    display: block;
+    margin-bottom: 16px;
+
+    @include w-from($screen-md) {
+        margin-bottom: 24px;
+    }
+}
