@@ -1,9 +1,14 @@
-// Размеры экрана
+// Неправильные Размеры экрана
 $screen-sm: 375px;
 $screen-md: 667px;
 $screen-md-2: 768px;
 $screen-lg: 1024px;
 $screen-xl: 1440px;
+
+/* Правильные размеры экрана в соответсвии с макетом */
+$screen-mobile: 375px;
+$screen-tablet: 700px;
+$screen-desktop: 1210px;
 
 // Переходы
 $transition-slowly: .8s;
@@ -17,7 +22,7 @@ $transition-hover-on: $transition-medium;
 $transition-hover-off: $transition-normal;
 
 // Шрифты
-$font-family-default: 'Robot', Helvetica, Arial, sans-serif;
+$font-family-default: 'Roboto', Helvetica, Arial, sans-serif;
 
 
 // Цвета

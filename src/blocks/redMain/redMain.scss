@@ -1,68 +1,73 @@
 .section-red {
   position: relative;
   z-index: 2;
+  /* TODO Благодаря этому стилю, этот блок перестает быть переиспользуемым в любом месте.
+      Стили БЭМ-блока section-red должны описывать его внутреннее состояние, а это стиль внешний,
+      он к блоку отношения не имеет, значит его необзодимо выносить наверх, например обертку добавить но вне этого файла,
+      или сделать микширование классов что пока не рекомендую так как прдиется углубляться в функции шаблонизатора.
+      z-index верятно тоже лишний тут, его бы наверх вынести. */
   margin-bottom: -200px;
-}
 
-.section-red__container {
-  margin-left: -16px;
-  margin-right: -16px;
-  background: linear-gradient(90deg, #BA1833 0%, #D73954 100%);
-  border-radius: 0;
-  padding:  40px 30px;
-  color: white;
-  display: flex;
-  flex-direction: column;
+  &__container {
+    margin-left: -16px;
+    margin-right: -16px;
+    background: linear-gradient(90deg, #BA1833 0%, #D73954 100%);
+    border-radius: 0;
+    padding:  40px 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
 
-  @include w-from($screen-md) {
-    align-items: center;
-    border-radius: 16px;
-    padding: 48px;
-    margin-left: 0;
-    margin-right: 0;
+    @include w-from($screen-md) {
+      align-items: center;
+      border-radius: 16px;
+      padding: 48px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    @include w-from($screen-lg) {
+      padding: 64px;
+    }
   }
 
-  @include w-from($screen-lg) {
-    padding: 64px;
+  &__controls {
+    display: flex;
+    flex-direction: column;
+
+    @include w-from($screen-md) {
+      flex-direction: row;
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+
+      @include w-from($screen-md) {
+        justify-content: flex-start;
+      }
+    }
+
+    button:not(:last-child) {
+      margin-bottom: 8px;
+      width: 100%;
+
+      @include w-from($screen-md) {
+        margin-right: 12px;
+        margin-bottom: 0;
+      }
+
+      @include w-from($screen-lg) {
+        margin-right: 22px;
+      }
+    }
   }
-}
 
-.section-red__controls {
-  display: flex;
-  flex-direction: column;
+  &__title {
+    max-width: 100%;
 
-  @include w-from($screen-md) {
-    flex-direction: row;
-  }
-}
-
-.section-red__controls button{
-  display: flex;
-  justify-content: center;
-
-  @include w-from($screen-md) {
-    justify-content: flex-start;
-  }
-}
-
-.section-red__controls button:not(:last-child) {
-  margin-bottom: 8px;
-  width: 100%;
-
-  @include w-from($screen-md) {
-    margin-right: 12px;
-    margin-bottom: 0;
-  }
-
-  @include w-from($screen-lg) {
-    margin-right: 22px;
-  }
-}
-
-.section-red__title {
-  max-width: 100%;
-
-  @include w-from($screen-lg) {
-    max-width: 60%;
+    @include w-from($screen-lg) {
+      max-width: 60%;
+    }
   }
 }
