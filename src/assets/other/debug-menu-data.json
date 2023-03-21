@@ -1,7 +1,27 @@
 [
-   {
+  {
     "title": "Главная страница",
     "link": "/index.html",
+    "mod": "new"
+  },
+  {
+    "title": "Разработка",
+    "link": "/designing.html",
+    "mod": "new"
+  },
+  {
+    "title": "Проекты",
+    "link": "/projects.html",
+    "mod": "new"
+  },
+  {
+    "title": "Сервис",
+    "link": "/services.html",
+    "mod": "new"
+  },
+  {
+    "title": "Блог",
+    "link": "/blog.html",
     "mod": "new"
   }
 ]
