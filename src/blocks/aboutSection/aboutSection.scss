@@ -1,0 +1,113 @@
+.section-about__img {
+    display: block;
+    margin: 0 auto;
+    margin-top: -90px;
+    width: 300px;
+    height: 162px;
+
+    @include w-from($screen-md) {
+        margin-top: -170px;
+        width: 600px;
+        height: 324px;
+    }
+
+    @include w-from($screen-lg) {
+        margin-top: -300px;
+        width: auto;
+        height: auto;
+    }
+}
+
+.section-about__content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @include w-from($screen-lg) {
+        flex-direction: row;
+    }
+}
+
+.section-about__right {
+    max-width: 70%;
+}
+
+.section-about__right-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 12px;
+    margin-top: 20px;
+
+    @include w-from($screen-md) {
+        margin-top: 30px;
+        margin-bottom: 16px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+.section-about__right-list {
+    padding-left: 20px;
+    margin-top: 8px;
+
+    @include w-from($screen-md) {
+        margin-top: 12px;
+    }
+}
+
+.section-about__right-list li {
+    list-style: disc;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    @include w-from($screen-md) {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+.section-about__left-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 4px;
+
+    @include w-from($screen-md) {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 12px;
+    }
+}
+
+.section-about__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    @include w-from($screen-md) {
+        margin-bottom: 0;
+        flex-direction: row;
+    }
+
+    @include w-from($screen-lg) {
+        flex-direction: column;
+    }
+}
+
+.section-about__left-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+
+    @include w-from($screen-md) {
+        font-size: 14px;
+        line-height: 32px;
+    }
+}
+
+.section-about__left-text:not(:last-child) {
+    margin-bottom: 38px;
+}

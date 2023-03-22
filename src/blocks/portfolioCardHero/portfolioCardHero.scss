@@ -1,0 +1,11 @@
+.section-hero.section-hero-portfolio-card {
+    padding-bottom: 50px;
+
+    @include w-from($screen-md) {
+        padding-bottom: 100px;
+    }
+
+    @include w-from($screen-lg) {
+        padding-bottom: 200px;
+    }
+}

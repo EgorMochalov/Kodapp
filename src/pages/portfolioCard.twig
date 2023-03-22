@@ -1,0 +1,19 @@
+{% extends 'template/main.twig' %}
+
+{% block body %}
+
+  {% set head = {
+    "title": "Kodapp",
+    "text": [
+      "Элемент списка 1",
+      "Элемент списка 2",
+      "Элемент списка 3"
+    ]
+  } %}
+  {% include '../blocks/portfolioCardHero/portfolioCardHero.twig' %}
+  {% include '../blocks/aboutSection/aboutSection.twig' %}
+  {% include '../blocks/skillsPortfolio/skillsPortfolio.twig' %}
+  {% include '../blocks/portfolioGallery/portfolioGallery.twig' %}
+  {% include '../blocks/redMain/redMain.twig' %}
+
+{% endblock %}
