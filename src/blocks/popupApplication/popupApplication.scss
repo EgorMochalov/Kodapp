@@ -1,0 +1,279 @@
+.popupApplication-container {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FAFAFA;
+    padding-bottom: 24px;
+    padding-top: 24px;
+
+    @include w-from($screen-md) {
+        padding-bottom: 48px;
+        padding-top: 30px;
+    }
+
+    @include w-from($screen-lg) {
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        padding-bottom: 64px;
+        padding-top: 60px;
+    }
+}
+
+.popupApplication-container-visible {
+    display: block;
+}
+
+.popupApplication-content__exit svg {
+    width: 24px;
+    height: 24px;
+
+    @include w-from($screen-md) {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.popupApplication__content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @include w-from($screen-md) {}
+
+    @include w-from($screen-lg) {
+        flex-direction: row;
+    }
+}
+
+.popupApplication__head {
+    flex: 1;
+}
+
+.popupApplication__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @include w-from($screen-md) {}
+
+    @include w-from($screen-lg) {
+        width: 60%;
+        margin-left: 30px;
+    }
+}
+
+.popupApplication__form-area {
+    resize: none;
+    box-sizing: border-box;
+    width: 100%;
+    height: 138px;
+    border: 2px solid #EBEBEA;
+    border-radius: 8px;
+    padding: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 20px;
+
+    @include w-from($screen-md) {
+        margin-top: 24px;
+        padding: 24px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    @include w-from($screen-lg) {
+        margin-top: 0;
+    }
+}
+
+.popupApplication__form .popupApplication__form-input {
+    box-sizing: border-box;
+    border: 2px solid #EBEBEA;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 13px;
+    padding-top: 13px;
+    font-size: 14px;
+    line-height: 20px;
+
+    @include w-from($screen-md) {
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 16px;
+        padding-top: 16px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+.popupApplication__form .popupApplication__form-input {
+    margin-bottom: 8px;
+
+    @include w-from($screen-md) {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+
+    @include w-from($screen-lg) {
+        margin-right: 12px;
+    }
+}
+
+.section-skills__desr.popupApplication__descr {
+    margin-top: 12px;
+
+    @include w-from($screen-md) {
+        margin-top: 24px;
+    }
+
+    @include w-from($screen-lg) {
+        margin-top: 18px;
+    }
+}
+
+.popupApplication__form .popupApplication__form-span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 8px;
+    color: #323231;
+    margin-bottom: 20px;
+
+    @include w-from($screen-md) {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+}
+
+.popupApplication__form-inputs__container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    @include w-from($screen-md) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.popupApplication__form-inputs__container:not(:last-child) {
+    @include w-from($screen-md) {
+        margin-bottom: 12px;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.popupApplication__form-submits {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @include w-from($screen-md) {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.popupApplication__form-inputs__file {
+    align-self: start;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #C41E3A;
+
+    @include w-from($screen-md) {
+        flex-direction: row;
+        align-items: center;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 30px;
+    }
+}
+
+.popupApplication__form-inputs__file svg {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+
+    @include w-from($screen-md) {
+        width: 18px;
+        height: 18px;
+        margin-right: 12px;
+    }
+}
+
+.popupApplication__form-label {
+    position: relative;
+    max-width: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #323231;
+    padding-left: 32px;
+    margin-bottom: 40px;
+
+    @include w-from($screen-md) {
+        max-width: 60%;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 0;
+    }
+}
+
+.popupApplication__form-submits {
+    margin-top: 24px;
+}
+
+.popupApplication__form .btn-application span {
+    color: white;
+}
+
+.popupApplication__form .btn-application {
+    display: flex;
+    justify-content: center;
+
+    @include w-from($screen-md) {
+        justify-content: flex-start;
+    }
+}
+
+.popupApplication__form-label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #EBEBEA;
+    border-radius: 4px;
+}
+
+.popupApplication__form-label::after {
+    content: "";
+    display: none;
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    width: 8px;
+    height: 8px;
+    border-radius: 0px;
+    background: #C41E3A;
+}
+
+#check:checked~.popupApplication__form-label::after {
+    display: block;
+}

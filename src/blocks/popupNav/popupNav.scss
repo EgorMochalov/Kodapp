@@ -1,0 +1,58 @@
+.popupNav-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    z-index: 10;
+    color: #111111;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    transform: translateY(-100%);
+    transition: transform $transition-normal ease-in;
+
+    @include w-from($screen-md) {
+        padding-bottom: 48px;
+        padding-top: 30px;
+    }
+
+    @include w-from($screen-lg) {
+        padding-bottom: 64px;
+        padding-top: 60px;
+    }
+}
+
+.popupNav-container-visible {
+    transform: none;
+} 
+
+.popupNav-content {
+    margin: 0 auto;
+}
+
+.popupNav-content a,
+.popupNav-content h4,
+.popupNav-content span {
+    color: #111111;
+}
+
+.popupNav-content__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    @include w-from($screen-md) {
+        margin-bottom: 48px;
+    }
+}
+
+.popupNav-content__exit svg{
+    width: 24px;
+    height: 24px;
+
+    @include w-from($screen-md) {
+        width: 32px;
+        height: 32px;
+    }
+}

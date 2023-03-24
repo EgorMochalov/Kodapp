@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="ru">
-{% include "../parts/meta.twig" %}
-<body>
+	{% include "../parts/meta.twig" %}
+	<body>
 
-{#{% include "../../blocks/browser-update/browser-update.twig" %}#}
+		{#{% include "../../blocks/browser-update/browser-update.twig" %}#}
 
-{% block header %}
-  {% include "../../blocks/header/header.twig" %}
-{% endblock %}
+		{% block header %}
+			{% include "../../blocks/header/header.twig" %}
+		{% endblock %}
 
-<main class="page-main">
-  {#{% include '../../blocks/preloader/preloader.twig' %}#}
-  {% block body %}{% endblock %}
-</main>
+		<main
+			class="page-main">
+			{#{% include '../../blocks/preloader/preloader.twig' %}#}
+			{% block body %}{% endblock %}
+		</main>
 
-{% block footer %}
- {% include "../../blocks/footer/footer.twig" %}
-{% endblock %}
+		{% block footer %}
+			{% include "../../blocks/footer/footer.twig" %}
+		{% endblock %}
 
-{% include "../../assets/icons/icon-sprite.svg" %}
+		{% include "../../assets/icons/icon-sprite.svg" %}
 
-{% block popups %}{% endblock %}
+		{% block popups %}
+			{% include "../../blocks/popupNav/popupNav.twig" %}
+			{% include "../../blocks/popupApplication/popupApplication.twig" %}
+		{% endblock %}
 
-{% block vueTemplates %}{% endblock %}
+		{% block vueTemplates %}{% endblock %}
 
-{% block scripts %}
-  <script src="/scripts/vendor/swiper.min.js"></script>
-  <script src="/scripts/index.js" defer></script>
-  <script src="/scripts/frontend-debug-menu.js" defer></script>
-{% endblock %}
-</body>
+		{% block scripts %}
+			<script>
+				window.GLOBAL_PARAMS = {
+					apiBaseURL: "http://localhost:8000/"
+				}
+			</script>
+			<script src="/scripts/vendor/swiper.min.js"></script>
+			<script src="/scripts/index.js" defer></script>
+			<script src="/scripts/frontend-debug-menu.js" defer></script>
+		{% endblock %}
+	</body>
 </html>

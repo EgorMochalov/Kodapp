@@ -1,0 +1,47 @@
+<div class="popupApplication-container">
+	<div class="container popupNav-content">
+		<div class="popupNav-content__head">
+			<a href="#">
+				<svg class="header__logo" width="310" height="100">
+					<use xlink:href="#i-logo"/>
+				</svg>
+			</a>
+			<button class="popupApplication-content__exit">
+				<svg width="36" height="36">
+					<use xlink:href="#i-exit"/>
+				</svg>
+			</button>
+		</div>
+		<div class="popupApplication__content">
+			<div class="popupApplication__head">
+				<h2 class="h2-title">Оставить заявку</h2>
+				<p class="section-skills__desr popupApplication__descr">Проконсультируем и сориентируем по необходимому бюджету и срокам разработки.</p>
+			</div>
+			<form id="form" class="popupApplication__form">
+				<textarea id="textarea" required resize=none class="popupApplication__form-area" placeholder="Пожалуйста, опишите задачу"></textarea>
+				<span class="popupApplication__form-span">Напишите коротко о проекте. Бриф и другую документацию вы сможете приложить ниже.</span>
+				<div class="popupApplication__form-inputs">
+					<div class="popupApplication__form-inputs__container">
+						<input id="name" required type="text" placeholder="Ваше имя" class="popupApplication__form-input"/>
+					</div>
+					<div class="popupApplication__form-inputs__container">
+						<input id="tel" required type="tel" placeholder="Телефон" class="popupApplication__form-input"/>
+						<input id="mail" required type="email" placeholder="Электронная почта" class="popupApplication__form-input"/>
+					</div>
+				</div>
+				<label for="file" class="popupApplication__form-inputs__file"><svg width="18" height="18"><use xlink:href="#i-paperClip"/></svg>Прикрептие файл</label>
+				<input type="file" id="file" placeholder="Прикрепите файл" class="hidden"/>
+				<div class="popupApplication__form-submits">
+					<input type="checkbox" id="check" name="check" class="hidden">
+					<label class="popupApplication__form-label" for="check">Я даю согласие ООО «Дуотек» на обработку персональных данных, указанных в заявке. Согласие на обработку персональных данных.</label>
+					<button class="btn btn-application" type="submit">
+						<span>Оставить заявку</span>
+						<svg class="btn-application__arrow hidden-md" width="14" height="14">
+							<use xlink:href="#i-arrow-r"></use>
+						</svg>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
