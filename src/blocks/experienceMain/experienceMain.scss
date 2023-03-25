@@ -32,12 +32,12 @@
     text-align: center;
 }
 
-.experience__item-active .experience__item-text {
+.experience__item.active .experience__item-text {
     font-weight: 600;
     color: #C41E3A;
 }
 
-.experience__item-active::before {
+.experience__item.active::before {
     position: absolute;
     z-index: 100000;
     content: "";

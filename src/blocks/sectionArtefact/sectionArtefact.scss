@@ -35,29 +35,24 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    margin-top: 8px;
-    margin-bottom: 20px;
+}
+
+.section-artefact__descr.content[aria-hidden=false] {
+    padding-top: 8px;
+    padding-bottom: 20px;
 
     @include w-from($screen-md) {
-        margin-top: 12px;
+        padding-top: 12px;
         font-size: 16px;
         line-height: 28px;
-        margin-bottom: 24px;
+        padding-bottom: 24px;
     }
 
     @include w-from($screen-md) {
-        margin-bottom: 52px;
+        padding-bottom: 52px;
     }
 }
 
-
-.section-artefact__item .section-artefact__descr {
-    display: none;
-}
-
-.section-artefact__item-active .section-artefact__descr {
-    display: block;
-}
 
 .section-artefact__item span {
     cursor: pointer;
@@ -79,15 +74,15 @@
 
 }
 
-.section-artefact__item-active span {
+.section-artefact__item[data-drawer-showing="true"] span {
     color: #C41E3A;
 }
 
-.section-artefact__item-active use {
+.section-artefact__item[data-drawer-showing="true"] use {
     stroke: #C41E3A;
 }
 
-.section-artefact__item-active svg {
+.section-artefact__item[data-drawer-showing="true"] svg {
     transform: rotate(180deg);
 }
 
