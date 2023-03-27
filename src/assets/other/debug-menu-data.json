@@ -23,5 +23,15 @@
     "title": "Блог",
     "link": "/blog.html",
     "mod": "new"
+  },
+  {
+    "title": "Блог кард",
+    "link": "/blogCard.html",
+    "mod": "new"
+  },
+  {
+    "title": "Портфолио кард",
+    "link": "/portfolioCard.html",
+    "mod": "new"
   }
 ]

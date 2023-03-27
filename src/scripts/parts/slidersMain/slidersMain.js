@@ -10,8 +10,8 @@ export const slidersMain = () => {
       initialSlide: 1,
       // Navigation arrows
       navigation: {
-        nextEl: '.js-keys__swiper-next',
-        prevEl: '.js-keys__swiper-prev',
+        nextEl: e.nextElementSibling.querySelector('.js-keys__swiper-next'),
+        prevEl: e.nextElementSibling.querySelector('.js-keys__swiper-prev'),
       }
     });
   })
@@ -56,7 +56,7 @@ export const slidersMain = () => {
       // Optional parameters
       slidesPerView: 'auto',
       pagination: {
-        el: '.js-info-pagination',
+        el: e.nextElementSibling,
       },
       spaceBetween: 20,
       autoHeight: true,
@@ -81,8 +81,8 @@ export const slidersMain = () => {
         }
       },
       navigation: {
-        nextEl: '.js-designing__swiper-next',
-        prevEl: '.js-designing__swiper-prev',
+        nextEl: e.nextElementSibling.querySelector('.js-designing__swiper-next'),
+        prevEl: e.nextElementSibling.querySelector('.js-designing__swiper-prev'),
       }
     });
   })

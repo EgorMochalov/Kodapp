@@ -59,6 +59,11 @@
 }
 
 .section-footer__list-item a {
+    transition: color $transition-slow ease-in;
+    color: rgb(170, 169, 169);
+}
+
+.section-footer__list-item:hover a {
     color: white;
 }
 

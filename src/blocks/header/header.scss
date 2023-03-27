@@ -13,6 +13,10 @@
     padding-top: 60px;
   }
 
+  &__button,&__logo-link {
+    display: flex;
+  }
+
   &__nav {
     position: relative;
     z-index: 2;
@@ -86,7 +90,14 @@
   }
 
   &__item a {
-    color: #111111;
+    color: gray;
+    transition: color $transition-slow ease-in;
+  }
+
+  @media(hover:hover) {
+    &__item:hover a{
+      color: #111111;
+    }
   }
 
   &__content {

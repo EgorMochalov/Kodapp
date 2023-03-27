@@ -38,9 +38,5 @@ export const drop = () => {
             });
         });
     }
-
-    if (document.documentElement.clientWidth < 700) {
-        window.addEventListener("load", initDrawersMd);
-    }
     window.addEventListener("load", initDrawers);
 }

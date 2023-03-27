@@ -70,11 +70,11 @@
   border-left: 1px solid #EBEBEA;
 }
 
-.section-keys__swiper-prev use {
+.section-keys__swiper-prev use,.section-keys__swiper-next use {
   stroke: #111111;
 }
 
-.section-keys__swiper-next use {
+.section-keys__swiper-next:hover use,.section-keys__swiper-prev:hover use {
   stroke: #C41E3A;
 }
 
